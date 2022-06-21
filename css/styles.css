@@ -1,0 +1,187 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 71.25em) {
+    html {
+      font-size: 56.25%; } }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #777; }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+main {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  grid-template-rows: 100vh; }
+  @media screen and (max-width: 63.75em) {
+    main {
+      grid-template-columns: 1fr 1fr 1fr; } }
+
+/*==============
+Hero section
+===============*/
+.hero {
+  background-color: #57584b;
+  color: #d9dbbc;
+  padding: 2rem 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media screen and (max-width: 47.5em) {
+    .hero {
+      grid-column: 1 / -1; } }
+  .hero__photoshoot {
+    display: none; }
+    @media screen and (max-width: 47.5em) {
+      .hero__photoshoot {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0; } }
+  .hero__title {
+    font-size: 8rem;
+    line-height: 1.4;
+    color: #fff; }
+  .hero__text {
+    width: 70%; }
+    @media screen and (max-width: 63.75em) {
+      .hero__text {
+        width: 100%; } }
+    @media screen and (max-width: 47.5em) {
+      .hero__text {
+        width: 60%; } }
+  .hero__link:not(:last-child) {
+    margin-right: 1rem; }
+  .hero__link:hover {
+    color: #fff;
+    transition: all 0.25s linear; }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav__logo {
+    display: none; }
+    @media screen and (max-width: 47.5em) {
+      .nav__logo {
+        display: block; } }
+    .nav__logo a {
+      font-size: 2rem;
+      font-weight: 100; }
+  .nav li a:hover {
+    color: #fff;
+    transition: all 0.25s linear; }
+
+/*==============
+About section
+================*/
+.about {
+  display: grid;
+  grid-template-rows: 60vh 1fr;
+  justify-items: center; }
+  @media screen and (max-width: 47.5em) {
+    .about {
+      grid-column: 1 / -1;
+      grid-template-rows: 50vh;
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 30em) {
+    .about {
+      grid-template-rows: max-content;
+      grid-template-columns: 1fr; } }
+  @media screen and (max-width: 47.5em) {
+    .about__img {
+      object-position: 0 -50px; } }
+  @media screen and (max-width: 30em) {
+    .about__img {
+      object-position: 0 0px;
+      width: 50%; } }
+  .about__info {
+    padding: 0rem 3.6rem;
+    align-self: center; }
+    @media screen and (max-width: 63.75em) {
+      .about__info {
+        padding: 0rem 2rem; } }
+    @media screen and (max-width: 30em) {
+      .about__info {
+        padding: 4rem;
+        border-bottom: 1px solid #57584b; } }
+  .about__title {
+    color: #000; }
+  .about__text {
+    margin-bottom: 1rem; }
+  .about__link {
+    color: #444;
+    border-bottom: 1px solid #444;
+    transition: all 0.25s linear; }
+    .about__link:hover {
+      font-size: 1.25rem; }
+
+/*==============
+Places section
+================*/
+.places {
+  display: grid;
+  grid-template-rows: 1fr 60vh; }
+  @media screen and (max-width: 47.5em) {
+    .places {
+      grid-column: 1 / -1;
+      grid-template-rows: 50vh;
+      grid-template-columns: 1fr 1fr; } }
+  @media screen and (max-width: 30em) {
+    .places {
+      grid-template-rows: max-content;
+      grid-template-columns: 1fr; } }
+  .places__img-box {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../images/places.jpg) center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .places__img {
+    width: 50%;
+    height: auto; }
+    @media screen and (max-width: 47.5em) {
+      .places__img {
+        width: 50%; } }
+  .places__info {
+    order: -1;
+    padding: 0rem 3.6rem;
+    align-self: center; }
+    @media screen and (max-width: 63.75em) {
+      .places__info {
+        padding: 0rem 2rem; } }
+    @media screen and (max-width: 30em) {
+      .places__info {
+        padding: 4rem; } }
+  .places__title {
+    color: #000;
+    line-height: 1.4; }
+  .places__text {
+    margin-bottom: 1rem; }
+  .places__link {
+    color: #444;
+    border-bottom: 1px solid #444;
+    transition: all 0.25s linear; }
+    .places__link:hover {
+      font-size: 1.25rem; }
